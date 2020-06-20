@@ -1,0 +1,33 @@
+export declare class Scheduler {
+    cronExpression: string;
+    everyMinute(): this;
+    everyFiveMinutes(): this;
+    everyTenMinutes(): this;
+    everyFifteenMinutes(): this;
+    everyThirtyMinutes(): this;
+    hourly(): this;
+    hourlyAt(offset: string): this;
+    daily(): this;
+    at(time: string): this;
+    dailyAt(time: string): this;
+    twiceDaily(first?: number, second?: number): this;
+    weekdays(): this;
+    weekends(): this;
+    mondays(): this;
+    tuesdays(): this;
+    wednesdays(): this;
+    thursdays(): this;
+    fridays(): this;
+    saturdays(): this;
+    sundays(): this;
+    weekly(): this;
+    weeklyOn(day: number, time?: string): this;
+    monthly(): this;
+    monthlyOn(day?: number, time?: string): this;
+    twiceMonthly(first?: number, second?: number): this;
+    quarterly(): this;
+    yearly(): this;
+    days(...args: any): this;
+    spliceIntoPosition(position: number, value: any): this;
+    cron(expression: string): any;
+}

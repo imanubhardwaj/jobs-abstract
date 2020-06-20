@@ -1,0 +1,32 @@
+{
+  "name": "jobs-abstract",
+  "version": "1.0.0",
+  "description": "Abstract Class for scheduling jobs in Node.",
+  "keywords": [
+    "Jobs",
+    "Node"
+  ],
+  "author": "Manu Bhardwaj",
+  "license": "MIT",
+  "homepage": "https://github.com/imanubhardwaj/jobs-abstract#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imanubhardwaj/jobs-abstract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imanubhardwaj/jobs-abstract/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.17",
+    "@types/node-cron": "^2.0.2",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "node-cron": "^2.0.3"
+  }
+}
