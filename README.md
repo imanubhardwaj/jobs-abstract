@@ -1,15 +1,15 @@
-# Job Abstract Node
+# Job Abstract
 
-Abstract Class for scheduling jobs in Node.
+Schedule jobs in Node.
 
 ## Installation
 Installing with *npm*
 
-``npm i jobs-abstract-node``  
+``npm i jobs-abstract``  
 
 Installing with *yarn*  
 
-``yarn add jobs-abstract-node``
+``yarn add jobs-abstract``
 
 ## Getting Started
 
