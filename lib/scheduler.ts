@@ -2,6 +2,7 @@ import cron from "node-cron";
 
 export class Scheduler {
   cronExpression = "* * * * *";
+  isAltered = false;
 
   everyMinute(): Scheduler {
     return this.spliceIntoPosition(1, '*');
@@ -159,6 +160,7 @@ export class Scheduler {
   spliceIntoPosition(position: number, value: any): Scheduler {
     const segments = this.cronExpression.split(" ");
     segments[position - 1] = value;
+    this.isAltered = true;
     return this.cron(segments.join(" "));
   }
 
@@ -167,6 +169,7 @@ export class Scheduler {
       return this;
     }
     this.cronExpression = expression;
+    this.isAltered = true;
     return this;
   }
 }

@@ -3,7 +3,11 @@ import cron from "node-cron";
 
 export abstract class JobsAbstract extends Scheduler {
   schedule(): JobsAbstract {
-    cron.schedule(this.cronExpression, this.handle);
+    if (this.isAltered) {
+      cron.schedule(this.cronExpression, this.handle);
+    } else {
+      this.handle();
+    }
     return this;
   }
 
