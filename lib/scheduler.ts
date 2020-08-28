@@ -160,7 +160,6 @@ export class Scheduler {
   spliceIntoPosition(position: number, value: any): Scheduler {
     const segments = this.cronExpression.split(" ");
     segments[position - 1] = value;
-    this.isAltered = true;
     return this.cron(segments.join(" "));
   }
 
